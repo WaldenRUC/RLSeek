@@ -1,0 +1,7 @@
+.DS_Store
+data/
+ckpt/
+wandb/
+*.log
+__pycache__/
+*.py[cod]
