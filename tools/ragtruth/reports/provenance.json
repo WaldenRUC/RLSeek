@@ -1,0 +1,39 @@
+{
+  "ragtruth": {
+    "repository": "https://github.com/ParticleMedia/RAGTruth",
+    "commit": "c103204b9ce28d6bbad859304bf30de72b8ed8fe"
+  },
+  "rlseek": {
+    "repository": "https://github.com/HaiDuong0219/RLSeek",
+    "commit": "b4981a2a5b3cbff3d3a64f6ed7507616de704442"
+  },
+  "python": "3.10.22",
+  "versions": {
+    "pyarrow": "25.0.1",
+    "datasets": "3.6.0",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4",
+    "torch": "2.6.0+cpu",
+    "hydra-core": "1.3.8",
+    "omegaconf": "2.3.1",
+    "tiktoken": "0.14.0",
+    "ray": "2.49.2"
+  },
+  "conversion": {
+    "sampling": "none",
+    "order": "source response.jsonl order within each original split",
+    "quality_filter": "none",
+    "labels": "all original label fields serialized with repr; parsed with ast.literal_eval",
+    "binary_label": "int(bool(labels)); local convention",
+    "prompt": "unofficial template in prepare_ragtruth.py",
+    "parquet": "PyArrow write_table defaults"
+  },
+  "tokenizer": {
+    "model_requested_by_launcher": "Qwen/Qwen2.5-7B-Instruct",
+    "variant_tested": "@lenml/tokenizer-qwen2_5@3.7.2",
+    "npm_downloader_source_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "equivalence_to_7b_verified": false,
+    "npm_integrity": "sha512-6hbFsuKfOU7pncR3qQqvhOAcDboqWTZOTob9jv4sJZjXhc8X05r4pretlPeyC2UeLU/ayFDU6rl5dd/BDDUsFg==",
+    "npm_downloader_reference": "https://github.com/lenML/tokenizers/blob/84df136b47250279c539efbc4d880c5f1abcc1a8/scripts/dl_hf_models.mjs"
+  }
+}

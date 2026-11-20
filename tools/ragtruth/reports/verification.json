@@ -1,0 +1,68 @@
+{
+  "tokenizer_dir": "tokenizer-qwen25-npm",
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "max_prompt_length": 16384,
+  "train_batch_size": 64,
+  "splits": {
+    "train": {
+      "input": 15090,
+      "retained": 15090,
+      "dropped": 0,
+      "dropped_by_reason": {
+        "over_max_prompt_length": 0,
+        "tokenizer_error": 0
+      },
+      "dropped_response_ids": {},
+      "max_prompt_tokens_all_tokenized": 2837,
+      "max_prompt_tokens_retained": 2837,
+      "source_count": 2515,
+      "span_count": 12756,
+      "quality_counts": {
+        "good": 14942,
+        "truncated": 28,
+        "incorrect_refusal": 120
+      },
+      "binary_label_counts": {
+        "0": 8369,
+        "1": 6721
+      },
+      "task_counts": {
+        "Summary": 4758,
+        "Data2txt": 5298,
+        "QA": 5034
+      },
+      "reward_api_checked": 15090,
+      "materialized_and_collated": 15090
+    },
+    "test": {
+      "input": 2700,
+      "retained": 2700,
+      "dropped": 0,
+      "dropped_by_reason": {
+        "over_max_prompt_length": 0,
+        "tokenizer_error": 0
+      },
+      "dropped_response_ids": {},
+      "max_prompt_tokens_all_tokenized": 2473,
+      "max_prompt_tokens_retained": 2473,
+      "source_count": 450,
+      "span_count": 1533,
+      "quality_counts": {
+        "good": 2675,
+        "incorrect_refusal": 24,
+        "truncated": 1
+      },
+      "binary_label_counts": {
+        "0": 1757,
+        "1": 943
+      },
+      "task_counts": {
+        "Summary": 900,
+        "Data2txt": 900,
+        "QA": 900
+      },
+      "reward_api_checked": 2700,
+      "materialized_and_collated": 2700
+    }
+  }
+}
